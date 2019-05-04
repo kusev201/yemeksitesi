@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Show Route</h1>
+
+    <h3><%=yemek.adi%></h3>
+    <img src="<%=yemek.resim%>"/>
+
+    <h3><%=yemek.aciklama%></h3> 
+
+    <p><a class="btn btn-success" href="/yemekler/<%=yemek._id%>/yorumlar/yeni">Yorum Ekle</a></p>
+
+    <p>
+        <%yemek.yorumlar.forEach(function(yorum){ %>
+            <p><strong><%=yorum.yazar%></strong>  -- <%=yorum.text%></p>
+        <% }); %>
+    </p>
+</div>

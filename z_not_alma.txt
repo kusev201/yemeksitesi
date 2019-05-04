@@ -1,0 +1,49 @@
+Index   /yemekler       GET
+New     /yemekler/yeni  GET
+Create  /yemekler       POST
+show    /yemekler/:id   GET
+
+NEW     /yemekler/:id/yorumlar/yeni     GET
+CREATE  /yemekler/:id/yorumlar          POST
+
+
+
+
+>show dbs
+>use yemekSitesi
+>show collecitons
+>db.yemeks.find()
+
+//db.yemeks.drop()  /tablo silme
+show dbs
+use yemekSitesi
+show collecitons
+//yemekSitesin'de  iken
+db.dropDatabase(); tum database siliniyor
+
+git komutları
+
+git init
+git gui
+git status
+git config --list
+
+
+git remote -v                  remote  listesi veril
+
+git remote add origin https://github.com/kusev201/web-github-demo.git
+git remote -v 
+
+git log
+git push origin master                              karşıya gönderme
+
+git diff    değişiklikler farkını görmek için
+
+git add . && git commit -m "yine bir test"
+
+
+
+
+
+
+
